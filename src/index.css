@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(226, 207, 207);
+  --color-secondary: #9da5a7;
+}
+
+.gg {
+  p:nth-child(1) {
+    color: blue;
+  }
+  p:nth-child(2) {
+    color: green;
+  }
+}
+html.dark {
+  --color-primary: rgb(43, 9, 9);
+  --color-secondary: #19405e;
+}
