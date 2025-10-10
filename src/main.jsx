@@ -10,6 +10,56 @@ import { BrowserRouter as Router, Routes,Route} from "react-router-dom";
 
 const queryClient = new QueryClient();
 
+// in the provider comp
+// "use client";
+
+// import {
+//   ChakraProvider,
+//   createSystem,
+//   defaultConfig,
+//   defineConfig,
+//   defineSlotRecipe,
+// } from "@chakra-ui/react";
+// import { ColorModeProvider } from "./color-mode";
+
+// Example button recipe
+// export const buttonRecipe = defineSlotRecipe({
+//   defaultVariants: {
+//     size: { base: "xs", lg: "md", xl: "lg" },
+//   },
+// });
+
+// ✅ Define system config properly
+// const config = defineConfig({
+//   theme: {
+//     semanticTokens: {
+//       colors: {
+//         bg: {
+//           value: {
+//             base: "{colors.gray.100}",   // light mode
+//             _dark: "{colors.green.900}", // dark mode
+//           },
+//         },
+//       },
+//     },
+//     recipes: {
+//       button: buttonRecipe,
+//     },
+//   },
+//   preflight: false, // ✅ make sure Chakra resets CSS properly
+// });
+
+export const system = createSystem(defaultConfig, config);
+
+export function Provider({ children }) {
+  return (
+    <ChakraProvider value={system}>
+      <ColorModeProvider>{children}</ColorModeProvider>
+    </ChakraProvider>
+  );
+}
+
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ChakraProvider value={defaultSystem}>
