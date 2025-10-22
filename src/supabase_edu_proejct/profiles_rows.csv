@@ -1,0 +1,7 @@
+id,created_at,fullName,classLevel,role,email,phoneNumber,otp_code,otp_expires_at,exams,lessons
+587c0a2a-0f82-4c01-ac44-03d400e67f30,2025-10-17 23:30:45.299188+00,yolo,Grade 2 Secondary,student,yolA4@gmail.com,01234564879,,,,
+5fbc33af-0791-4706-8288-65e18afbb75d,2025-10-13 20:35:26.609753+00,osama kkk,Grade 1 Secondary,student,osamaelseify11@gmail.com,01234567892,,,,
+a847d3b3-e308-4ce4-bab1-e2b323045e89,2025-10-17 05:42:01.587625+00,mr.ahmed,,admin,ahmed@gmail.com,01234567899,,,,
+dbe8ff94-b025-4fab-b9f8-8c3feb6e32be,2025-10-17 05:02:52.556481+00,mr.kappa,,admin,admin@gmail.com,01234567898,,,,
+dc0c7967-3d5c-4e68-ae15-e38c87345e8e,2025-10-17 06:03:28.030335+00,mr.anwar,,admin,anwer13@gmail.com,01123654879,,,,
+e4ca2aca-f002-454f-80ca-1e4caef638ba,2025-10-17 05:11:50.670934+00,ali,Grade 2 Secondary,student,ali@gmail.com,01234567899,,,,
