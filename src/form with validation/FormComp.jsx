@@ -17,7 +17,7 @@ export default function FormComp() {
   const onSubmit = async (data) => {
     await getAuth(data);
   };
-  
+
   return (
     <div className="flex items-center justify-center h-dvh w-full">
       <form

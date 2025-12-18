@@ -36,12 +36,21 @@ import { Form, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formSchema } from "./validationSchema";
 import FormComp from "./form with validation/FormComp";
+import CChartJs from "./components/ui/CChartJs";
 
 function App() {
+  return (
+    <>
+      <CChartJs />
+      <Shit />
+    </>
+  );
+}
+const Shit = () => {
   const [loading, setLoading] = useState(false);
   const dialog = useDialog();
   const { colorMode, toggleColorMode } = useColorMode();
-// u can make element darkMode always or Light mode by waping them <DarkMode>
+  // u can make element darkMode always or Light mode by waping them <DarkMode>
 
   return (
     <div className="bg-primary">
@@ -280,7 +289,7 @@ function App() {
       </Container>
     </div>
   );
-}
+};
 
 const FormInputs = () => {
   const {
